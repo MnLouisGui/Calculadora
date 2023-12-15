@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana;
+}
+.body{
+    background-color: #c4dad2;
+}
+main{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #c4dad2;
+}
+
+
+.nav{
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #c4dad2;
+    background-color:#235a5a;
+}
+
+.navlogo, .title{
+    align-items: center;
+    margin: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.title{
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 4px 4px #308d4f, 8px 8px #103131 ;
+}
+
+.logo{
+    width: 70px;
+    transition: 500ms linear;
+}.logo:hover{opacity: 0.8; transform: scale(1.1); transform: rotate(180deg);}
+
+.links{
+    margin-right: 10px;
+    margin-left: 40vh;
+}
+.links a{
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 3px;
+    font-size: 20px;
+    color: #c4dad2;
+
+}
+a:hover{
+    border: 7px solid;
+    border-radius: 3px;
+    border-image: repeating-linear-gradient(135deg,#c4dad2 0 10px,#103131 0 20px,#103131 0 30px) 8;
+    -webkit-mask: 
+        conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+        var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+        conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+        0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+        linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+    --_i: 100%;
+
+    transition: .3s, -webkit-mask-size .3s .3s;
+}
+
+.sobre, .calculadora{
+    width: 800px;
+    background-color:#235a5a;
+    border-radius: 30px;
+    color: #c4dad2;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    align-self: center;
+    box-shadow: 4px 4px #103131;
+    text-shadow: 3px 3px #308d4f, 6px 6px #103131
+}
+.boxsobre, .boxcalculadora{
+    align-self: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.boxtext, .boxcalculadora{
+    align-self: center;
+    background-color:#235a5a;
+    color: #c4dad2;
+    border-radius: 30px;
+    margin:25px;
+    padding: 30px;
+    width: 500px;
+    box-shadow: 4px 4px #103131;
+}.text{margin: 10px;}
+
+
+button{
+    margin: 5px;
+    padding: 5px;
+    width: 120px;
+    background-color: #9dbeb2;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #153d3d;
+    font: 24px;
+
+    transition: 200ms linear;
+}button:hover{opacity: 0.6; transform: scale(1.1);}

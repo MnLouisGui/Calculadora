@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/calcular.png">
+    <title>calculadora</title>
+</head>
+<body class="body">
+    <div class="nav">
+        <div class="navlogo">
+            <img class="logo" src="img/calculadora.png">
+        </div>
+        <div class="title">
+            <h1>Calculadora de juros simples</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Box1">
+            <div class="inputbox1">
+                <h2>Valor R$</h2>
+                <input id="valor" type="number">
+            </div>
+            <div class="inputbox2">
+                <h2>Juros %</h2>
+                <input id="juros" type="number">
+            </div>
+            <div class="inputbox3">
+                <h2>Anos<br></h2>
+                <input id="anos" type="number">
+            </div>
+        </div>
+        <div class="Box2">
+                <button id="button" class="buttonn" onclick="calcular()"><strong>Calcular</strong></button>
+            <div class="calbox1"> 
+                <h2>Resultado</h2>
+                <div class="resultbox">
+                    <h2 id="valor_final">R$</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

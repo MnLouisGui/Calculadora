@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros</title>
+    <link rel="stylesheet" href="instyle.css">
+    <link rel="icon" type="image/x-icon" href="img/calculadora.png">
+    <style href="instyle.css"></style>
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <div class="navlogo">
+                <img class="logo" src="img/calculadora.png">
+            </div>
+            <div class="title">
+                <h1>Juros simples</h1>
+            </div>
+            <div class="links">
+                <a href="#sobre">Como funciona?</a>
+                <a href="#calculadora">Calculadora</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+        <div class="boxsobre">
+            <div class="sobre">
+                <h1>Como funciona?</h1>
+            </div>
+        </div>
+        <div class="boxtext">
+            <div class="text">
+                <p>
+                    "O juro simples é calculado tendo como base o valor inicial, conhecido como capital, a taxa de juro e o tempo. A fórmula do juro simples é J = C ∙ i ∙ t, em que J é o juro, C é o capital, i é a taxa de juro e t é o tempo.
+                    Para calcular o juro simples, basta substituir os valores na fórmula e realizar o cálculo. Além do juro simples, existe também o juro composto, que possui um acréscimo maior ao decorrer do tempo.
+                </p>
+            </div>
+        </div>
+
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="boxcalculadora">
+            <div class="textcalculadora">
+                <button id="btt" onclick="btt('calculadora.html')">Abrir</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        function btt(URL) {
+            window.open(URL, 'janela', 'width=400, height=600, scrollbars=no, status=no, toolbar=no, location=no, menubar=no, resizable=no, fullscreen=no')
+        }
+    </script>
+</body>
+</html>
